@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roof Replacement in Dallas | Free Estimate in 30 Seconds</title>
+  <meta name="description" content="Professional roof replacement in Dallas, TX. Licensed & insured. Free inspection, fast installation, and a 25-year warranty. Book your free estimate today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#0b1f3a;
+      --navy-2:#132c4f;
+      --orange:#ff6b1a;
+      --orange-dark:#e85a0c;
+      --gray:#f5f7fa;
+      --text:#1a2233;
+      --muted:#5a6a85;
+      --white:#ffffff;
+      --green:#1f9d55;
+      --border:#e3e8f0;
+      --shadow:0 10px 30px rgba(11,31,58,.08);
+      --radius:14px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',system-ui,-apple-system,sans-serif;
+      color:var(--text);
+      line-height:1.6;
+      background:var(--white);
+      -webkit-font-smoothing:antialiased;
+    }
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}
+
+    /* ---------- TOP BAR ---------- */
+    .topbar{
+      background:var(--navy);
+      color:#cfe0f5;
+      font-size:13.5px;
+      padding:8px 0;
+      text-align:center;
+    }
+    .topbar strong{color:#fff}
+    .topbar .dot{color:var(--orange);margin:0 8px}
+
+    /* ---------- HEADER ---------- */
+    header{
+      position:sticky;top:0;z-index:100;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;
+      height:70px;
+    }
+    .logo{
+      display:flex;align-items:center;gap:10px;
+      font-weight:800;font-size:19px;color:var(--navy);
+      letter-spacing:-.3px;
+    }
+    .logo-mark{
+      width:36px;height:36px;border-radius:9px;
+      background:linear-gradient(135deg,var(--orange),#ff9a3d);
+      display:grid;place-items:center;color:#fff;font-size:19px;
+      box-shadow:0 6px 16px rgba(255,107,26,.35);
+    }
+    .nav-links{display:flex;gap:28px;font-size:14.5px;font-weight:500;color:var(--muted)}
+    .nav-links a:hover{color:var(--orange)}
+    .nav-cta{
+      background:var(--orange);color:#fff;
+      padding:11px 20px;border-radius:10px;
+      font-weight:600;font-size:14px;
+      transition:.2s;
+      box-shadow:0 6px 18px rgba(255,107,26,.3);
+    }
+    .nav-cta:hover{background:var(--orange-dark);transform:translateY(-1px)}
+    .menu-btn{display:none;font-size:24px;background:none;border:none;color:var(--navy);cursor:pointer}
+
+    /* ---------- HERO ---------- */
+    .hero{
+      position:relative;
+      background:
+        linear-gradient(100deg, rgba(11,31,58,.94) 0%, rgba(11,31,58,.82) 45%, rgba(11,31,58,.55) 100%),
+        url('https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color:#fff;
+      padding:70px 0 80px;
+    }
+    .hero-grid{
+      display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;
+    }
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.22);
+      padding:7px 15px;border-radius:100px;
+      font-size:13px;font-weight:500;color:#dbe9ff;
+      margin-bottom:20px;
+    }
+    .badge .star{color:#ffc93c}
+    .hero h1{
+      font-size:46px;line-height:1.12;font-weight:800;
+      letter-spacing:-1px;margin-bottom:18px;
+    }
+    .hero h1 span{color:var(--orange)}
+    .hero p.lead{
+      font-size:17.5px;color:#c9d8ec;max-width:540px;margin-bottom:28px;
+    }
+    .hero-points{display:flex;flex-direction:column;gap:11px;margin-bottom:32px}
+    .hero-points li{
+      list-style:none;display:flex;align-items:center;gap:11px;
+      font-size:15px;color:#e4eefc;font-weight:500;
+    }
+    .check{
+      width:21px;height:21px;border-radius:50%;
+      background:var(--green);display:grid;place-items:center;
+      font-size:12px;color:#fff;flex-shrink:0;
+    }
+    .hero-btns{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    .btn-primary{
+      background:var(--orange);color:#fff;
+      padding:16px 32px;border-radius:11px;font-weight:700;font-size:16px;
+      display:inline-flex;align-items:center;gap:9px;
+      box-shadow:0 10px 28px rgba(255,107,26,.4);
+      transition:.2s;border:none;cursor:pointer;
+    }
+    .btn-primary:hover{background:var(--orange-dark);transform:translateY(-2px)}
+    .btn-ghost{
+      color:#fff;font-weight:600;font-size:15px;
+      display:inline-flex;align-items:center;gap:8px;
+      padding:16px 6px;border-bottom:2px solid rgba(255,255,255,.3);
+      transition:.2s;
+    }
+    .btn-ghost:hover{border-color:var(--orange);color:var(--orange)}
+
+    /* ---------- FORM CARD ---------- */
+    .form-card{
+      background:#fff;
+      border-radius:18px;
+      padding:30px 28px;
+      box-shadow:0 25px 60px rgba(0,0,0,.28);
+      color:var(--text);
+      position:relative;
+      border-top:5px solid var(--orange);
+    }
+    .form-card h3{
+      font-size:21px;font-weight:800;color:var(--navy);
+      margin-bottom:6px;letter-spacing:-.4px;
+    }
+    .form-card .sub{
+      font-size:13.5px;color:var(--muted);margin-bottom:20px;
+    }
+    .free-tag{
+      position:absolute;top:-14px;right:22px;
+      background:var(--green);color:#fff;
+      font-size:11.5px;font-weight:700;letter-spacing:.6px;
+      padding:6px 13px;border-radius:100px;
+      text-transform:uppercase;
+    }
+    .field{margin-bottom:14px}
+    .field label{
+      display:block;font-size:12.5px;font-weight:600;
+      color:var(--navy);margin-bottom:6px;letter-spacing:.2px;
+    }
+    .field input, .field select{
+      width:100%;padding:13px 15px;
+      border:1.5px solid var(--border);border-radius:10px;
+      font-size:15px;font-family:inherit;color:var(--text);
+      background:#fbfcfe;transition:.18s;
+    }
+    .field input:focus, .field select:focus{
+      outline:none;border-color:var(--orange);
+      background:#fff;box-shadow:0 0 0 4px rgba(255,107,26,.1);
+    }
+    .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .form-submit{
+      width:100%;background:var(--orange);color:#fff;
+      padding:16px;border:none;border-radius:11px;
+      font-size:16px;font-weight:700;font-family:inherit;
+      cursor:pointer;margin-top:6px;transition:.2s;
+      box-shadow:0 8px 22px rgba(255,107,26,.35);
+    }
+    .form-submit:hover{background:var(--orange-dark);transform:translateY(-2px)}
+    .form-note{
+      text-align:center;font-size:12px;color:var(--muted);
+      margin-top:13px;display:flex;align-items:center;justify-content:center;gap:6px;
+    }
+    .form-note svg{width:13px;height:13px}
+
+    /* ---------- TRUST STRIP ---------- */
+    .trust-strip{
+      background:var(--gray);
+      padding:26px 0;
+      border-bottom:1px solid var(--border);
+    }
+    .trust-items{
+      display:flex;justify-content:space-around;align-items:center;
+      flex-wrap:wrap;gap:22px;
+    }
+    .trust-item{
+      display:flex;align-items:center;gap:11px;
+      font-size:14px;font-weight:600;color:var(--navy-2);
+    }
+    .trust-item .ic{
+      width:38px;height:38px;border-radius:10px;
+      background:#fff;display:grid;place-items:center;
+      font-size:18px;box-shadow:0 3px 10px rgba(11,31,58,.07);
+    }
+    .trust-item small{display:block;font-weight:400;font-size:11.5px;color:var(--muted)}
+
+    /* ---------- SECTIONS ---------- */
+    section{padding:80px 0}
+    .sec-head{text-align:center;max-width:680px;margin:0 auto 50px}
+    .kicker{
+      color:var(--orange);font-weight:700;font-size:13px;
+      letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;
+      display:block;
+    }
+    .sec-head h2{
+      font-size:36px;font-weight:800;color:var(--navy);
+      letter-spacing:-.8px;line-height:1.2;margin-bottom:14px;
+    }
+    .sec-head p{color:var(--muted);font-size:16.5px}
+
+    /* SERVICES */
+    .services-grid{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:26px;
+    }
+    .service-card{
+      background:#fff;border:1px solid var(--border);
+      border-radius:var(--radius);padding:30px 26px;
+      transition:.25s;position:relative;overflow:hidden;
+    }
+    .service-card::before{
+      content:'';position:absolute;top:0;left:0;right:0;height:4px;
+      background:linear-gradient(90deg,var(--orange),#ff9a3d);
+      transform:scaleX(0);transform-origin:left;transition:.3s;
+    }
+    .service-card:hover{
+      transform:translateY(-5px);
+      box-shadow:var(--shadow);border-color:transparent;
+    }
+    .service-card:hover::before{transform:scaleX(1)}
+    .service-icon{
+      width:52px;height:52px;border-radius:13px;
+      background:linear-gradient(135deg,#fff4ec,#ffe4d1);
+      display:grid;place-items:center;font-size:24px;
+      margin-bottom:18px;
+    }
+    .service-card h3{
+      font-size:18.5px;font-weight:700;color:var(--navy);
+      margin-bottom:9px;letter-spacing:-.3px;
+    }
+    .service-card p{font-size:14.5px;color:var(--muted);line-height:1.65}
+
+    /* PROCESS */
+    .process{background:var(--gray)}
+    .process-grid{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+    }
+    .step{
+      background:#fff;border-radius:var(--radius);
+      padding:28px 22px;position:relative;
+      border:1px solid var(--border);
+    }
+    .step-num{
+      width:42px;height:42px;border-radius:11px;
+      background:var(--navy);color:#fff;
+      display:grid;place-items:center;font-weight:800;font-size:17px;
+      margin-bottom:16px;
+    }
+    .step:nth-child(2) .step-num{background:var(--orange)}
+    .step:nth-child(3) .step-num{background:var(--navy)}
+    .step:nth-child(4) .step-num{background:var(--orange)}
+    .step h3{font-size:16.5px;font-weight:700;color:var(--navy);margin-bottom:8px}
+    .step p{font-size:14px;color:var(--muted)}
+
+    /* WHY US */
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+    .why-img{
+      border-radius:18px;overflow:hidden;
+      box-shadow:var(--shadow);position:relative;
+    }
+    .why-img img{height:420px;object-fit:cover;width:100%}
+    .why-img .stat-float{
+      position:absolute;bottom:22px;left:22px;
+      background:#fff;border-radius:13px;padding:16px 20px;
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
+      display:flex;align-items:center;gap:13px;
+    }
+    .why-img .stat-float .big{
+      font-size:27px;font-weight:800;color:var(--orange);line-height:1;
+    }
+    .why-img .stat-float small{font-size:12px;color:var(--muted);display:block}
+    .why-list{display:flex;flex-direction:column;gap:22px;margin-top:26px}
+    .why-item{display:flex;gap:15px}
+    .why-item .ico{
+      width:44px;height:44px;border-radius:11px;
+      background:#fff4ec;color:var(--orange);
+      display:grid;place-items:center;font-size:20px;flex-shrink:0;
+    }
+    .why-item h4{font-size:16.5px;font-weight:700;color:var(--navy);margin-bottom:4px}
+    .why-item p{font-size:14.5px;color:var(--muted)}
+
+    /* TESTIMONIALS */
+    .testimonials{background:var(--navy);color:#fff}
+    .testimonials .sec-head h2{color:#fff}
+    .testimonials .sec-head p{color:#a9bed9}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .testi-card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:var(--radius);padding:28px 26px;
+      transition:.25s;
+    }
+    .testi-card:hover{background:rgba(255,255,255,.1);transform:translateY(-4px)}
+    .stars{color:#ffc93c;font-size:15px;margin-bottom:14px;letter-spacing:2px}
+    .testi-card p{font-size:14.8px;color:#d8e5f5;line-height:1.7;margin-bottom:20px}
+    .testi-author{display:flex;align-items:center;gap:12px}
+    .avatar{
+      width:44px;height:44px;border-radius:50%;
+      background:linear-gradient(135deg,var(--orange),#ff9a3d);
+      display:grid;place-items:center;font-weight:700;color:#fff;font-size:16px;
+    }
+    .testi-author strong{font-size:14.5px;display:block}
+    .testi-author small{font-size:12.5px;color:#9fb4d0}
+
+    /* FAQ */
+    .faq-list{max-width:800px;margin:0 auto}
+    .faq-item{
+      border:1px solid var(--border);border-radius:12px;
+      margin-bottom:13px;overflow:hidden;background:#fff;
+      transition:.2s;
+    }
+    .faq-item.open{border-color:var(--orange);box-shadow:0 6px 20px rgba(255,107,26,.1)}
+    .faq-q{
+      width:100%;text-align:left;background:none;border:none;
+      padding:19px 22px;font-size:16px;font-weight:600;
+      color:var(--navy);font-family:inherit;cursor:pointer;
+      display:flex;justify-content:space-between;align-items:center;gap:15px;
+    }
+    .faq-q .plus{
+      color:var(--orange);font-size:22px;font-weight:400;
+      transition:.25s;flex-shrink:0;
+    }
+    .faq-item.open .plus{transform:rotate(45deg)}
+    .faq-a{
+      max-height:0;overflow:hidden;transition:max-height .3s ease;
+    }
+    .faq-a p{
+      padding:0 22px 20px;color:var(--muted);font-size:14.8px;line-height:1.7;
+    }
+
+    /* FINAL CTA */
+    .final-cta{
+      background:
+        linear-gradient(120deg, rgba(11,31,58,.95), rgba(19,44,79,.9)),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') center/cover;
+      color:#fff;text-align:center;padding:80px 0;
+    }
+    .final-cta h2{
+      font-size:38px;font-weight:800;letter-spacing:-.8px;margin-bottom:16px;
+    }
+    .final-cta h2 span{color:var(--orange)}
+    .final-cta p{color:#c9d8ec;font-size:17px;max-width:600px;margin:0 auto 32px}
+    .final-cta .btn-primary{font-size:17px;padding:18px 40px}
+    .final-note{margin-top:18px;font-size:13.5px;color:#a9bed9}
+
+    /* FOOTER */
+    footer{background:#081729;color:#8fa6c2;padding:45px 0 30px;font-size:14px}
+    .footer-grid{
+      display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;
+      padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    footer .logo{color:#fff;margin-bottom:14px}
+    footer p{line-height:1.7;font-size:13.5px}
+    footer h4{color:#fff;font-size:14.5px;margin-bottom:14px;font-weight:700}
+    footer ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+    footer ul a:hover{color:var(--orange)}
+    .footer-bottom{
+      text-align:center;padding-top:22px;font-size:12.8px;color:#6b81a0;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media(max-width:980px){
+      .hero-grid{grid-template-columns:1fr;gap:40px}
+      .hero h1{font-size:36px}
+      .services-grid{grid-template-columns:1fr 1fr}
+      .process-grid{grid-template-columns:1fr 1fr}
+      .why-grid{grid-template-columns:1fr}
+      .testi-grid{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr}
+      .nav-links{display:none}
+      .menu-btn{display:block}
+    }
+    @media(max-width:640px){
+      .hero h1{font-size:30px}
+      .sec-head h2{font-size:27px}
+      .services-grid, .process-grid, .footer-grid{grid-template-columns:1fr}
+      .field-row{grid-template-columns:1fr}
+      .trust-items{justify-content:flex-start;gap:16px}
+      .final-cta h2{font-size:27px}
+      .form-card{padding:24px 20px}
+      section{padding:58px 0}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+      <strong>⭐ Rated 4.9/5</strong> by 380+ Dallas homeowners
+      <span class="dot">•</span>
+      Licensed &amp; Insured
+      <span class="dot">•</span>
+      Free Roof Inspection
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">
+        <span class="logo-mark">🏠</span>
+        Dallas Roof Pros
+      </a>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
+        <a href="#why">Why Us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#book" class="nav-cta">Get Free Estimate</a>
+      <button class="menu-btn" onclick="document.getElementById('book').scrollIntoView()">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="badge">
+          <span class="star">★★★★★</span> Trusted Roof Replacement Experts in Dallas, TX
+        </span>
+        <h1>New Roof in <span>Dallas</span> — Done Right, On Time, On Budget.</h1>
+        <p class="lead">
+          From storm damage to full roof replacement, we protect your home with premium materials,
+          expert craftsmanship, and a warranty you can count on. Free inspection. No pressure.
+        </p>
+        <ul class="hero-points">
+          <li><span class="check">✓</span> Free 21-point roof inspection &amp; honest quote</li>
+          <li><span class="check">✓</span> Licensed, insured &amp; locally owned in Dallas</li>
+          <li><span class="check">✓</span> Most roofs replaced in 1–2 days</li>
+          <li><span class="check">✓</span> Up to 25-year workmanship warranty</li>
+        </ul>
+        <div class="hero-btns">
+          <a href="#book" class="btn-primary">Get My Free Estimate →</a>
+          <a href="tel:+12145550199" class="btn-ghost">📞 (214) 555-0199</a>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="form-card" id="book">
+        <span class="free-tag">100% Free</span>
+        <h3>Get Your Free Roof Quote</h3>
+        <p class="sub">Takes 30 seconds. No obligation. We'll call you within 1 business hour.</p>
+
+        <form onsubmit="event.preventDefault(); this.innerHTML='<div style=\'text-align:center;padding:30px 10px\'><div style=\'font-size:46px;margin-bottom:12px\'>✅</div><h3 style=\'color:#0b1f3a;font-size:20px;margin-bottom:8px\'>Request Received!</h3><p style=\'color:#5a6a85;font-size:14.5px\'>Thank you! A Dallas roof specialist will call you shortly to schedule your free inspection.</p></div>';">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" placeholder="John Smith" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" placeholder="(214) 555-0123" required />
+          </div>
+          <div class="field">
+            <label for="address">Property Address</label>
+            <input id="address" type="text" placeholder="123 Main St, Dallas, TX" required />
+          </div>
+          <div class="field">
+            <label for="service">What do you need?</label>
+            <select id="service" required>
+              <option value="">Select a service…</option>
+              <option>Full Roof Replacement</option>
+              <option>Roof Repair</option>
+              <option>Storm / Hail Damage</option>
+              <option>Roof Inspection</option>
+              <option>Not Sure — Need Advice</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">Get My Free Estimate →</button>
+          <div class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#5a6a85" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Your information is safe &amp; never shared.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container trust-items">
+      <div class="trust-item">
+        <span class="ic">🛡️</span>
+        <div>Licensed &amp; Insured<small>TX Roofing License #RC-48291</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic">⭐</span>
+        <div>4.9/5 Rating<small>380+ verified reviews</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic">🏆</span>
+        <div>25-Yr Warranty<small>On workmanship</small></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic">📍</span>
+        <div>Local to Dallas<small>Serving DFW since 2009</small></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="sec-head">
+        <span class="kicker">Our Services</span>
+        <h2>Complete Roofing Solutions for Dallas Homes</h2>
+        <p>Whatever your roof needs, our certified Dallas crew handles it with precision and care.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Full Roof Replacement</h3>
+          <p>Complete tear-off and replacement using premium asphalt shingles, metal, or tile — built to handle Texas heat and storms.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔨</div>
+          <h3>Roof Repair</h3>
+          <p>Fast, reliable fixes for leaks, missing shingles, flashing damage, and worn areas — before they become costly problems.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⛈️</div>
+          <h3>Storm &amp; Hail Damage</h3>
+          <p>We document damage, work directly with your insurance, and restore your roof quickly after Dallas storms.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔍</div>
+          <h3>Free Roof Inspection</h3>
+          <p>A thorough 21-point inspection with photos and an honest, no-pressure assessment of your roof's condition.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧾</div>
+          <h3>Insurance Claim Help</h3>
+          <p>Our team guides you through the entire claims process — from documentation to final approval — stress-free.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧹</div>
+          <h3>Gutters &amp; Ventilation</h3>
+          <p>Proper drainage and attic ventilation solutions that extend your roof's lifespan and lower energy bills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="sec-head">
+        <span class="kicker">Simple Process</span>
+        <h2>Your New Roof in 4 Easy Steps</h2>
+        <p>We keep it transparent, fast, and completely hassle-free from start to finish.</p>
+      </div>
+      <div class="process-grid">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Book Free Inspection</h3>
+          <p>Fill out the quick form or call us. We schedule a visit at your convenience.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Get Honest Quote</h3>
+          <p>We inspect your roof, show you photos, and provide a clear, itemized estimate.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>We Install Your Roof</h3>
+          <p>Our certified crew completes most replacements in just 1–2 days, cleaning up fully.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Final Walkthrough</h3>
+          <p>We inspect together, answer questions, and hand over your 25-year warranty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why">
+    <div class="container why-grid">
+      <div class="why-img">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80" alt="Roofing crew installing a new roof in Dallas" loading="lazy" />
+        <div class="stat-float">
+          <span class="big">15+</span>
+          <div>
+            <strong style="font-size:14px;color:#0b1f3a;">Years in Dallas</strong>
+            <small>Locally owned &amp; operated</small>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="kicker">Why Choose Us</span>
+        <h2 style="font-size:34px;font-weight:800;color:var(--navy);letter-spacing:-.8px;line-height:1.2;margin-bottom:14px;">
+          Dallas Homeowners Trust Us With Their Roofs
+        </h2>
+        <p style="color:var(--muted);font-size:16px;">
+          We're not a faceless national chain. We're your neighbors — and we treat every roof like it's our own.
+        </p>
+        <div class="why-list">
+          <div class="why-item">
+            <span class="ico">🛡️</span>
+            <div>
+              <h4>Fully Licensed &amp; Insured</h4>
+              <p>Complete coverage and compliance, so your home and investment are always protected.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="ico">💎</span>
+            <div>
+              <h4>Premium Materials Only</h4>
+              <p>We install top-tier shingles and materials rated for Texas heat, hail, and high winds.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="ico">⏱️</span>
+            <div>
+              <h4>Fast, Clean Installation</h4>
+              <p>Most roofs done in 1–2 days with a full cleanup — no mess left behind, guaranteed.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="ico">💬</span>
+            <div>
+              <h4>Honest, No-Pressure Quotes</h4>
+              <p>Clear pricing, no hidden fees, and zero pushy sales tactics. Ever.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="reviews">
+    <div class="container">
+      <div class="sec-head">
+        <span class="kicker">Real Reviews</span>
+        <h2>What Dallas Homeowners Say</h2>
+        <p>Hundreds of happy customers across Dallas, Plano, Irving, and the DFW area.</p>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"They replaced our entire roof after hail damage and handled the insurance claim for us. Fast, clean, and professional. Our new roof looks fantastic!"</p>
+          <div class="testi-author">
+            <div class="avatar">SM</div>
+            <div>
+              <strong>Sarah M.</strong>
+              <small>Lakewood, Dallas</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"Got three quotes and these guys were the most honest and detailed. No upselling, fair price, and the crew finished in one day. Highly recommend."</p>
+          <div class="testi-author">
+            <div class="avatar">DR</div>
+            <div>
+              <strong>David R.</strong>
+              <small>Plano, TX</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p>"From the free inspection to the final walkthrough, everything was smooth. They even cleaned my gutters. True professionals from start to finish."</p>
+          <div class="testi-author">
+            <div class="avatar">JL</div>
+            <div>
+              <strong>Jennifer L.</strong>
+              <small>Irving, TX</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="sec-head">
+        <span class="kicker">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to the most common questions about roof replacement in Dallas.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">How much does a roof replacement cost in Dallas? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Most Dallas roof replacements range between $9,000 and $22,000 depending on size, pitch, and materials. We provide a free, itemized quote so you know exactly what you're paying for — no surprises.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How long does a roof replacement take? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Most residential roofs in Dallas are completed in 1–2 days. Larger or more complex roofs may take 3–4 days. We'll give you an accurate timeline before we begin.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you work with insurance claims? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes. We work directly with all major insurance providers, document all storm or hail damage, and guide you through the claims process from start to finish.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Do you offer a warranty? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Absolutely. We offer up to a 25-year workmanship warranty in addition to manufacturer material warranties. Your roof is fully protected.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Is the inspection really free? <span class="plus">+</span></button>
+          <div class="faq-a"><p>Yes — 100% free with no obligation. We'll inspect your roof, show you photos, and give you an honest assessment. You decide what to do next.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready for a <span>Stronger, Safer Roof</span>?</h2>
+      <p>Get your free, no-obligation roof replacement estimate today. It only takes 30 seconds — and it could save you thousands.</p>
+      <a href="#book" class="btn-primary">Get My Free Estimate →</a>
+      <div class="final-note">✓ Free inspection &nbsp;•&nbsp; ✓ No obligation &nbsp;•&nbsp; ✓ Response within 1 hour</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="logo"><span class="logo-mark">🏠</span> Dallas Roof Pros</a>
+          <p>Professional roof replacement, repair, and storm damage services for homeowners across Dallas and the DFW metroplex. Licensed, insured, and locally owned.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Roof Replacement</a></li>
+            <li><a href="#services">Roof Repair</a></li>
+            <li><a href="#services">Storm Damage</a></li>
+            <li><a href="#services">Free Inspection</a></li>
+            <li><a href="#services">Insurance Claims</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+12145550199">📞 (214) 555-0199</a></li>
+            <li><a href="mailto:info@dallasroofpros.com">✉️ info@dallasroofpros.com</a></li>
+            <li>📍 Dallas, TX</li>
+            <li>Mon–Sat: 7am – 7pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2025 Dallas Roof Pros. All rights reserved. &nbsp;|&nbsp; Licensed &amp; Insured in Texas
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const answer = item.querySelector('.faq-a');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-a').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
